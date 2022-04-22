@@ -77,10 +77,3 @@ footer {
   color: #202124;
   color: #5f6368;
 }
-
-.footer .social {
-  -ms-flex-align: center;
-  align-items: center;
-  display: -ms-flexbox;
-  display: flex;
-}
