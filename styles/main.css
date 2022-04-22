@@ -2,10 +2,22 @@ html, body {
   font-family: 'Kiwi Maru', serif;
 }
 
-.title {
-  font-family: 'Rampart One', cursive;
+img {
+  display: block;
+  margin: 0 auto;
 }
 
-.mdl-color--primary .mdl-layout {
-  background-color: #FE8A38 !important;
+.title {
+  font-family: 'Rampart One', cursive;
+  text-align: center;
+  margin: 0;
+  padding: 5px 0;
+  border: 4px solid black;
+  color: white;
+  background-color: #FE8A38;
+}
+
+p {
+  line-height: 2;
+  letter-spacing: 1px;
 }
