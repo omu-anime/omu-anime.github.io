@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  position: fixed;
+  position:fixed;
   top: 0;
   width: 100%;
   background-color: #FE8A38;
@@ -29,7 +29,9 @@ img {
 
 .title {
   margin-left: 20px;
+  margin-right: 20px;
   margin-top: 12px;
+  margin-bottom: -8px;
   color: white;
 }
 
@@ -39,9 +41,9 @@ img {
   margin-left: 60px;
 }
 
-.top-bar-link {
+.topbar-link-item {
   display: inline-block;
-  padding: 10px;
+  padding-left: 10px;
 }
 
 span.title-text {
@@ -49,9 +51,15 @@ span.title-text {
 }
 
 main {
-  margin-top: 110px;
+  margin-top: 140px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+@media screen and (min-width: 498px) {
+  main {
+      margin-top: 110px;
+  }
 }
 
 p {
