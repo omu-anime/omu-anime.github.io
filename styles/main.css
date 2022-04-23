@@ -10,7 +10,7 @@ header {
   top: 0;
   width: 100%;
   background-color: #FE8A38;
-  box-shadow: 0px 2px 2px gray;
+  box-shadow: 0px 1px 1px gray;
 }
 
 #title-top-area {
@@ -61,6 +61,7 @@ p {
 
 #twitter-area {
   padding: 20px;
+  max-width: 400px;
   background-image : linear-gradient(135deg,#1da1f2,#981ceb);
   background-color : #1b95e0;
 }
