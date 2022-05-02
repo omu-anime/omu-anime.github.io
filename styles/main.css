@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  position:fixed;
+  position: fixed;
   top: 0;
   width: 100%;
   background-color: #FE8A38;
@@ -18,11 +18,11 @@ header {
   list-style: none;
 }
 
-img {
+.title-logo-img {
   display: inline-block;
-  margin-top : 9px;
-  margin-bottom : 9px;
-  margin-left : 9px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  margin-left: 9px;
   width: 75px;
   height: 75px;
 }
@@ -35,10 +35,10 @@ img {
   color: white;
 }
 
-#title-links-area {
+.title-links-area {
   display: flex;
   list-style: none;
-  margin-left: 60px;
+  margin-left: -80px;
 }
 
 .topbar-link-item {
@@ -50,6 +50,19 @@ span.title-text {
   display: inline-block;
 }
 
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  border: none;
+  text-decoration: none;
+  color: white;
+}
+
+a.button.is-current {
+  border-bottom: solid;
+}
+
 main {
   margin-top: 140px;
   margin-left: 20px;
@@ -58,20 +71,30 @@ main {
 
 @media screen and (min-width: 498px) {
   main {
-      margin-top: 110px;
+    margin-top: 110px;
+  }
+  .title-links-area {
+    margin-left: 15px;
   }
 }
 
 p {
   line-height: 2;
   letter-spacing: 1px;
+  white-space: pre-wrap;
+}
+
+img {
+  max-width: 30%;
+  height: auto;
 }
 
 #twitter-area {
+  margin-top: 20px;
   padding: 20px;
   max-width: 400px;
-  background-image : linear-gradient(135deg,#1da1f2,#981ceb);
-  background-color : #1b95e0;
+  background-image: linear-gradient(135deg, #1da1f2, #981ceb);
+  background-color: #1b95e0;
 }
 
 #twitter-widget-0 {
@@ -85,4 +108,48 @@ footer {
   background-color: #f8f9fa;
   color: #202124;
   color: #5f6368;
+}
+
+.news-header {
+  display: flex;
+}
+
+.news-more {
+  position: absolute;
+  margin-top: 20px;
+  right: 40px;
+  background-color: #FE8A38;
+  border-radius: 1.6em;
+  width: 8.5em;
+  overflow: hidden;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+}
+
+.news-content {
+  display: flex;
+}
+
+.news-list-item {
+  list-style-type: none;
+  border-bottom: dotted;
+}
+
+.news-link {
+  color: black;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.news-more-link {
+  display: block;
+  padding: 0.4em 0;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.news-publish-date {
+  color: gray;
+  margin-left: 5px;
 }
